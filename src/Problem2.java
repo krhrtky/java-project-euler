@@ -1,7 +1,6 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.IntStream;
-
+/**
+ * 
+ */
 public class Problem2 {
     /**
      * フィボナッチ数列の項は前の2つの項の和である. 最初の2項を 1, 2 とすれば, 最初の10項は以下の通りである.<br/>
@@ -26,5 +25,6 @@ public class Problem2 {
             secondNum = lastNum;
         }
         System.out.println(fibonacciSum);
+
     }
 }
