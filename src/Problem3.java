@@ -1,14 +1,15 @@
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Problem3: 最大の素因数
+ * Problem3: 最大の素因数.
  */
 public class Problem3 {
     /**
      * 13195 の素因数は 5, 7, 13, 29 である.<br/>
      * 600851475143 の素因数のうち最大のものを求めよ.
-     * @param args
+     * @param args main引数.
      */
     public static void main(String[] args) {
 
@@ -32,5 +33,6 @@ public class Problem3 {
             }
         }
         System.out.println(maxNum);
+        System.out.println(Collections.max(primeFactorsSet));
     }
 }
