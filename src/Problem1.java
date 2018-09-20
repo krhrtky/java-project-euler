@@ -25,7 +25,7 @@ public class Problem1 {
         // StreamAPI実装
         final int lambdaSum = IntStream
                 .range(1, endNum)
-                .filter(num -> isMultipleOfThreeOrFive(num))
+                .filter(Problem1::isMultipleOfThreeOrFive)
                 .sum();
 
         System.out.println(lambdaSum);

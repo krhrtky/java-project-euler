@@ -36,22 +36,12 @@ public class Problem4 {
      */
     private static boolean isPalindrome(final int targetNum) {
 
-        final int digits = Integer.toString(targetNum).length();
-
-        if (digits == 0 || digits % 2 == 1) {
-            return false;
-        }
-
-        final int splitDigits = (digits / 2);
-        final String firstHalf = Integer
-                .toString(targetNum).
-                        substring(0, splitDigits);
+        final String targetStr = Integer.toString(targetNum);
         // 文字列の後半を切り出して、反転する.
-        final String secondHalf = new StringBuffer(Integer.toString(targetNum)
-                .substring(splitDigits, 2 * splitDigits))
+        final String targetReverse  = new StringBuffer(Integer.toString(targetNum))
                 .reverse()
                 .toString();
 
-        return firstHalf.equals(secondHalf);
+        return targetStr.equals(targetReverse);
     }
 }
